@@ -1,25 +1,34 @@
-﻿namespace MAUI_Cinemapark
+﻿using MAUI_Cinemapark.Services;
+
+namespace MAUI_Cinemapark.Pages;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
-    {
-        int count = 0;
+    private readonly TmdbService _tmdbService;
+    int count = 0;
 
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
+	public MainPage(TmdbService tmdbService)
+	{
+		InitializeComponent();
+        _tmdbService = tmdbService;
     }
 
+    protected async override void OnAppearing()
+    {
+        base.OnAppearing();
+		var trending = await _tmdbService.GetTrendingAsync();
+    }
+
+    private void OnCounterClicked(object sender, EventArgs e)
+	{
+		count++;
+
+		if (count == 1)
+			CounterBtn.Text = $"Clicked {count} time";
+		else
+			CounterBtn.Text = $"Clicked {count} times";
+
+		SemanticScreenReader.Announce(CounterBtn.Text);
+	}
 }
+

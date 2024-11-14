@@ -3,7 +3,7 @@
     x:Class="MAUI_Cinemapark.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MAUI_Cinemapark"
+    xmlns:pages="clr-namespace:MAUI_Cinemapark.Pages"
     Shell.FlyoutBehavior="Disabled"
     Title="MAUI_Cinemapark">
 
