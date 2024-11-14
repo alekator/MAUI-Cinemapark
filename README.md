@@ -4,12 +4,12 @@
 
 ## 📖 Table of Contents
 
-- [Features](#features)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [License](#license)
+- [Features](##features)
+- [Technologies](##technologies)
+- [Setup](##setup)
+- [Usage](##usage)
+- [Screenshots](##screenshots)
+- [License](##license)
 
 ---
 
