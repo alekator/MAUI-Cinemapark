@@ -16,7 +16,7 @@
             ContentTemplate="{DataTemplate pages:MainPage}"
             Route="MainPage" />
         <ShellContent
-            Title="Games"
+            Title="Library"
             Icon="game"
             ContentTemplate="{DataTemplate pages:MainPage}"
             Route="MainPage1" />
