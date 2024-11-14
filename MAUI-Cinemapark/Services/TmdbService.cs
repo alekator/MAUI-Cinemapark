@@ -12,7 +12,7 @@ namespace MAUI_Cinemapark.Services
     {
         private const string ApiKey = "f6f7a07b91d6ad02b8572934255ae4da"; // generate it from tmdb website
         public const string TmdbHttpClientName = "TmdbClient";
-            
+
         private readonly IHttpClientFactory _httpClientFactory;
 
         public TmdbService(IHttpClientFactory httpClientFactory)
