@@ -82,13 +82,10 @@ To set up the project on your local machine:
 - **Bookmarks**: Save and access a list of bookmarked movies for easy reference.
 
 ## 🖼 Screenshots
-![111255](https://github.com/user-attachments/assets/60d4f11f-2948-40bf-a137-c0271e6b5187)
-![1515436](https://github.com/user-attachments/assets/bf8fce06-8cbb-488c-8e0f-04880a9f3dca)
-![66262](https://github.com/user-attachments/assets/00455aa9-a26b-4ab1-a65e-39244873914e)
-![634647](https://github.com/user-attachments/assets/d4c0d30e-5dda-44ed-a5c5-9b8876b5171d)
-![68585](https://github.com/user-attachments/assets/7738a0e2-c598-4d97-a4a7-7526a0486eb2)
-
-
+![2222](https://github.com/user-attachments/assets/c7d3a439-69eb-488e-b982-31716d2a5261)
+![33333333](https://github.com/user-attachments/assets/e7565c1e-40cc-4ba9-a40e-b22e5cc419a1)
+![4444444](https://github.com/user-attachments/assets/44116507-8186-444d-8d21-849e371ab68f)
+![5555555](https://github.com/user-attachments/assets/d8658ab7-83cb-4543-88c1-b5fdc659b748)
 
 ## 📝 License
 
