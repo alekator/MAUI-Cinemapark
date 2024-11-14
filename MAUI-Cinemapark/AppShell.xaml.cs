@@ -1,10 +1,9 @@
-﻿namespace MAUI_Cinemapark
+﻿namespace MAUI_Cinemapark;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
-    {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
-    }
+	public AppShell()
+	{
+		InitializeComponent();
+	}
 }
