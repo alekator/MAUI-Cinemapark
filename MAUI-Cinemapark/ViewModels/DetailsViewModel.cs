@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using MAUI_Cinemapark.Models;
 using MAUI_Cinemapark.Services;
+using System.Collections.ObjectModel;
 
 namespace MAUI_Cinemapark.ViewModels
 {
@@ -26,6 +27,8 @@ namespace MAUI_Cinemapark.ViewModels
         [ObservableProperty]
         private bool _isBusy;
 
+        public ObservableCollection<Video> Videos { get; set; } = new();
+
         public async Task InitializeAsync()
         {
             IsBusy = true;
@@ -42,6 +45,11 @@ namespace MAUI_Cinemapark.ViewModels
                     var trailer = trailerTeasers.FirstOrDefault(t => t.type == "Trailer");
                     trailer ??= trailerTeasers.First();
                     MainTrailerUrl = GenerateYoutubeUrl(trailer.key);
+
+                    foreach (var video in trailerTeasers)
+                    {
+                        Videos.Add(video);
+                    }
                 }
                 else
                 {
