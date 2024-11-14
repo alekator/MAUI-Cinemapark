@@ -89,6 +89,6 @@ To set up the project on your local machine:
 ## 📝 License
 
 [MIT License](https://licenses.nuget.org/MIT)
-
 [Apache License 2.0](https://licenses.nuget.org/Apache-2.0)
+
 ---
