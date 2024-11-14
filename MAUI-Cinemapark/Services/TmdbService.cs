@@ -10,7 +10,7 @@ namespace MAUI_Cinemapark.Services
 {
     public partial class TmdbService
     {
-        //private const string ApiKey = "738b6d8d99b51339705b1037c981a488"; // generate it from tmdb website
+        private const string ApiKey = "738b6d8d99b51339705b1037c981a488"; // generate it from tmdb website
         public const string TmdbHttpClientName = "TmdbClient";
 
         private readonly IHttpClientFactory _httpClientFactory;
@@ -37,6 +37,23 @@ namespace MAUI_Cinemapark.Services
             await GetMediasAsync(TmdbUrls.NetflixOriginals);
         public async Task<IEnumerable<Media>> GetActionAsync() =>
             await GetMediasAsync(TmdbUrls.Action);
+
+        public async Task<IEnumerable<Video>?> GetTrailersAsync(int id, string type = "movie")
+        {
+            var videosWrapper = await HttpClient.GetFromJsonAsync<VideosWrapper>(
+                $"{TmdbUrls.GetTrailers(id, type)}&api_key={ApiKey}");
+
+            if(videosWrapper?.results?.Length > 0)
+            {
+                var trailerTeasers = videosWrapper.results.Where(VideosWrapper.FilterTrailerTeasers);
+                return trailerTeasers;
+            }
+            return null;
+        }
+
+        public async Task<MovieDetail> GetMediaDetailsAsync(int id, string type = "movie") =>
+            await HttpClient.GetFromJsonAsync<MovieDetail>(
+                $"{TmdbUrls.GetMovieDetails(id, type)}&api_key={ApiKey}");
 
         private async Task<IEnumerable<Media>> GetMediasAsync(string url)
         {
