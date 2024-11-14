@@ -82,11 +82,17 @@ To set up the project on your local machine:
 - **Bookmarks**: Save and access a list of bookmarked movies for easy reference.
 
 ## 🖼 Screenshots
+![111255](https://github.com/user-attachments/assets/60d4f11f-2948-40bf-a137-c0271e6b5187)
+![1515436](https://github.com/user-attachments/assets/bf8fce06-8cbb-488c-8e0f-04880a9f3dca)
+![66262](https://github.com/user-attachments/assets/00455aa9-a26b-4ab1-a65e-39244873914e)
+![634647](https://github.com/user-attachments/assets/d4c0d30e-5dda-44ed-a5c5-9b8876b5171d)
+![68585](https://github.com/user-attachments/assets/7738a0e2-c598-4d97-a4a7-7526a0486eb2)
 
-_Example screenshots of the application running on different platforms._
+
 
 ## 📝 License
 
 [MIT License](https://licenses.nuget.org/MIT)
+
 [Apache License 2.0](https://licenses.nuget.org/Apache-2.0)
 ---
