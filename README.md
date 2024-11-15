@@ -14,14 +14,14 @@
 - **Bookmarks**: Save favorite movies to a bookmarks list for easy access.
 - **Search**: Quickly find movies by title, genre, or keyword.
 
-## 🛠 Technologies
+## Technologies
 
 - **.NET MAUI** - Cross-platform UI toolkit for building applications for Android, iOS, macOS, and Windows.
 - **TMDB API** - For accessing an online library of movies, genres, trailers, and categories.
 - **CommunityToolkit.Maui** - UI and MVVM toolkit enhancements for .NET MAUI.
 - **Microsoft.Extensions** - Dependency injection, logging, and configuration.
 
-## 🚀 Setup
+## Setup
 
 To set up the project on your local machine:
 
@@ -61,7 +61,7 @@ To set up the project on your local machine:
      dotnet build -t:Run -f net8.0-windows
      ```
 
-## 📱 Usage
+## Usage
 
 - **Home Page**: Displays a list of featured movies.
 - **Categories Page**: Browse movies by categories such as action, comedy, drama, etc.
@@ -70,12 +70,12 @@ To set up the project on your local machine:
 - **Search**: Allows users to search for specific movies by title or category.
 - **Bookmarks**: Save and access a list of bookmarked movies for easy reference.
 
-## 🖼 Screenshots
+## Screenshots
 ![86868](https://github.com/user-attachments/assets/7e10bc1e-a459-477f-b519-81c29b985f08)
 ![79595](https://github.com/user-attachments/assets/1db45cdb-c40b-4294-b850-47127367d907)
 ![686585](https://github.com/user-attachments/assets/993537e1-9dd3-4c36-9ee4-cec7e0ed4468)
 
-## 📝 License
+## License
 
 [MIT License](https://licenses.nuget.org/MIT)
 
