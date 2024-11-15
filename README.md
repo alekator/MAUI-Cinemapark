@@ -2,7 +2,7 @@
 
 **MAUI Cinemapark** is an online cinema application built with .NET MAUI for cross-platform compatibility across Android, iOS, macOS, and Windows. This application utilizes the TMDB API to fetch an extensive online library of movies, with details on genres, categories, recommendations, trailers, and more.
 
-## 🌟 Features
+## Features
 
 - **Movie Database Integration**: Access a vast collection of movies fetched from TMDB API.
 - **Cross-Platform**: Runs on Android, iOS, Windows, and macOS.
