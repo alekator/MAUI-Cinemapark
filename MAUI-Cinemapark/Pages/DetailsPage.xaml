@@ -10,7 +10,6 @@
              BackgroundColor="Black"
              Shell.BackgroundColor="Black"
              Title="">
-
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style TargetType="Label" x:Key="sub">
@@ -88,6 +87,7 @@
 
                     <Label Text="{Binding Media.Overview}"
                            FontSize="13"/>
+
 
                     <Grid ColumnDefinitions="*, *, *">
                         <VerticalStackLayout HorizontalOptions="Center"
