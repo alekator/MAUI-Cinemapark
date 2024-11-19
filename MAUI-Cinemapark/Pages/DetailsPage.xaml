@@ -164,7 +164,43 @@
                     </Grid>
                     
                 </VerticalStackLayout>
+ <VerticalStackLayout Margin="5">
+                    <BoxView HeightRequest="2" />
 
+                    <Grid RowDefinitions="Auto, Auto"
+                          ColumnDefinitions="Auto, Auto"
+                          ColumnSpacing="15">
+                        
+                        <VerticalStackLayout Grid.Row="0"
+                                             Grid.Column="0">
+                            <BoxView HeightRequest="4"
+                                     Color="Red"
+                                     x:Name="trailersTabIndicator"/>
+
+                            <Label Text="Trailers &amp; More"
+                                   Style="{x:StaticResource tabtitle}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TrailersTab_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </VerticalStackLayout>
+                        
+                        <VerticalStackLayout Grid.Row="0"
+                                             Grid.Column="1">
+                            <BoxView HeightRequest="4"
+                                     Color="Black"
+                                     x:Name="similarTabIndicator"/>
+
+                            <Label Text="More Like This"
+                                   Style="{x:StaticResource tabtitle}">
+                                <Label.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="SimilarTab_Tapped"/>
+                                </Label.GestureRecognizers>
+                            </Label>
+                        </VerticalStackLayout>
+                    </Grid>
+                    
+                </VerticalStackLayout>
                 <Border BackgroundColor="Black"
                         StrokeThickness="0"
                         x:Name="trailersTabContent">
